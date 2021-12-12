@@ -1,5 +1,6 @@
 {
   "name": "wilcoxit",
+  "homepage": "https://parvej7m.github.io/masterwiz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
     "get-google-fonts": "^1.2.2",
+    "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
     "jquery-ui-dist": "^1.12.1",
     "jquery.counterup": "^2.1.0",
@@ -28,6 +30,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

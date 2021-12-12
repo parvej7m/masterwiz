@@ -33,7 +33,7 @@ useEffect(() => {
             <div className="row">
               <div className="col-lg-3 col-sm-6">
                 <div className="footer-widget-about">
-                  <a className="footer-logo" href="/"><img src={"https://www.kavitadentalclinic.com/masterwiz_admin/public/uploads/logo/"+image} alt="Logo" /></a>
+                  <a className="footer-logo" href="/masterwiz/"><img src={"https://www.kavitadentalclinic.com/masterwiz_admin/public/uploads/logo/"+image} alt="Logo" /></a>
                   <div className="widget-info">
                     <ul>
                       <li>
@@ -69,10 +69,10 @@ useEffect(() => {
                   <h4 className="footer-widget-title">Useful Links</h4>
                   <div className="widget-link">
                     <ul className="link">
-                      <li><a href="/about">About Us</a></li>
-                      <li><a href="/product">Products</a></li>
-                      <li><a href="/client">Client</a></li>
-                      <li><a href="/contact">Contact Us</a></li>
+                      <li><a href="/masterwiz/about">About Us</a></li>
+                      <li><a href="/masterwiz/product">Products</a></li>
+                      <li><a href="/masterwiz/client">Client</a></li>
+                      <li><a href="/masterwiz/contact">Contact Us</a></li>
                     </ul>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ useEffect(() => {
                   <div className="widget-link">
                     <ul className="link">
                        {url.map((urls, index)=>
-                          <li><a href={"/services/"+index}>{urls.title}</a></li>
+                          <li><a href={"/masterwiz/services/"+index}>{urls.title}</a></li>
                         )}  
                     </ul>
                   </div>

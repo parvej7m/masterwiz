@@ -41,35 +41,35 @@ function Menu() {
               <div className="container">
               <div className="header-wrap">
                 <div className="header-logo">
-                  <NavLink to="/"><img src={"https://www.kavitadentalclinic.com/masterwiz_admin/public/uploads/logo/"+image} alt="" /></NavLink>
+                  <NavLink to="/masterwiz/"><img src={"https://www.kavitadentalclinic.com/masterwiz_admin/public/uploads/logo/"+image} alt="" /></NavLink>
                 </div>
                 <div className="header-menu d-none d-lg-block">
                   <ul className="main-menu">
                     <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/masterwiz/">Home</NavLink>
                     </li>
                     <li>
-                      <NavLink to ='/about' >About</NavLink>
+                      <NavLink to ='/masterwiz/about' >About</NavLink>
                     </li>
                     <li><NavLink to="#">Products <i className="fa fa-caret-down" aria-hidden="true" /></NavLink>
                       <span className="menu-icon" /><ul className="sub-menu">
-                        <li><NavLink to="/product">Software Publishing</NavLink></li>
+                        <li><NavLink to="/masterwiz/product">Software Publishing</NavLink></li>
                       </ul>
                     </li>
                     <li><NavLink to="#">Solution <i className="fa fa-caret-down" aria-hidden="true" /></NavLink>
                       <span className="menu-icon" /><ul className="sub-menu">
-                        <li><NavLink to="/operation">Operations Management</NavLink></li>
+                        <li><NavLink to="/masterwiz/operation">Operations Management</NavLink></li>
                       </ul>
                     </li>
                     <li><NavLink to="">{menu.name}<i className="fa fa-caret-down" aria-hidden="true" /></NavLink>
                       <span className="menu-icon" /><ul className="sub-menu">
                         {url.map((urls, index)=>
-                          <li><a href={"/services/"+index}>{urls.title}</a></li>
+                          <li><a href={"/masterwiz/services/"+index}>{urls.title}</a></li>
                         )}  
                       </ul>
                     </li>
-                    <li><NavLink to="/client">Client</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
+                    <li><NavLink to="/masterwiz/client">Client</NavLink></li>
+                    <li><NavLink to="/masterwiz/contact">Contact</NavLink></li>
                   </ul>
                 </div>
                 <div className="header-meta">
@@ -95,7 +95,7 @@ function Menu() {
             <div className="offcanvas offcanvas-start" id="offcanvasExample">
               <div className="offcanvas-header">
                 <div className="header-logo">
-                  <NavLink to="/"><img src="images/logo1.png" alt="" /></NavLink>
+                  <NavLink to="/masterwiz/"><img src="images/logo1.png" alt="" /></NavLink>
                 </div>
                 <button type="button" className="close-btn" data-bs-dismiss="offcanvas"><i className="fa fa-times" /></button>
               </div>
@@ -103,30 +103,30 @@ function Menu() {
                 <div className="offcanvas-menu">
                   <ul className="main-menu">
                     <li>
-                      <a href="/">Home</a>
+                      <a href="/masterwiz/">Home</a>
                     </li>
                     <li>
-                      <a href="/about">About</a>
+                      <a href="/masterwiz/about">About</a>
                     </li>
                     <li><NavLink to="#">Products <i className="fa fa-caret-down" aria-hidden="true" /></NavLink>
                       <span className="menu-icon" /><span className="menu-expand" /><ul className="sub-menu">
-                        <li><a href ="/product">Software Publishing</a></li>
+                        <li><a href ="/masterwiz/product">Software Publishing</a></li>
                       </ul>
                     </li>
                     <li><NavLink to="#">Solution <i className="fa fa-caret-down" aria-hidden="true" /></NavLink>
                       <span className="menu-icon" /><span className="menu-expand" /><ul className="sub-menu">
-                        <li><a href="/operation">Operations Management</a></li>
+                        <li><a href="/masterwiz/operation">Operations Management</a></li>
                       </ul>
                     </li>
                     <li><NavLink to="#">{menu.name}<i className="fa fa-caret-down" aria-hidden="true" /></NavLink>
                       <span className="menu-icon" /><span className="menu-expand" /><ul className="sub-menu">
                       {url.map((urls, index)=>
-                          <li><a href={"/services/"+index}>{urls.title}</a></li>
+                          <li><a href={"/masterwiz/services/"+index}>{urls.title}</a></li>
                         )}  
                       </ul>
                     </li>
-                    <li><a href="/client">Client</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/masterwiz/client">Client</a></li>
+                    <li><a href="/masterwiz/contact">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -142,30 +142,30 @@ function Menu() {
                 <div className="offcanvas-menu">
                   <ul className="main-menu">
                     <li>
-                      <a href="/">Home</a>
+                      <a href="/masterwiz/">Home</a>
                     </li>
                     <li>
-                      <a href="/about">Aboute Us</a>
+                      <a href="/masterwiz/about">Aboute Us</a>
                     </li>
                     <li><a href="#">Products <i className="fa fa-caret-down" aria-hidden="true" /></a>
                       <span className="menu-icon" /><ul className="sub-menu">
-                        <li><a href="/product">Software Publishing</a></li>
+                        <li><a href="/masterwiz/product">Software Publishing</a></li>
                       </ul>
                     </li>
                     <li><NavLink to="#">Solution <i className="fa fa-caret-down" aria-hidden="true" /></NavLink>
                       <span className="menu-icon" /><ul className="sub-menu">
-                        <li><a href="/operation">Operations Management</a></li>
+                        <li><a href="/masterwiz/operation">Operations Management</a></li>
                       </ul>
                     </li>
                     <li><a href="#">{menu.name}<i className="fa fa-caret-down" aria-hidden="true" /></a>
                       <span className="menu-icon" /><ul className="sub-menu">
                       {url.map((urls, index)=>
-                          <li><a href={"/services/"+index}>{urls.title}</a></li>
+                          <li><a href={"/masterwiz/services/"+index}>{urls.title}</a></li>
                         )}  
                       </ul>
                     </li>
-                    <li><a href="/client">Client</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/masterwiz/client">Client</a></li>
+                    <li><a href="/masterwiz/contact">Contact</a></li>
                   </ul>
                 </div>
               </div>
