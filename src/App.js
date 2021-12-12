@@ -17,12 +17,11 @@ function App()
     <div >
   <Menu/>
    <Routes>
-   <Route exact path="/" element={<Home />} />
-        <Route exact path="/masterwiz" element={<Home />} />
-        <Route exact path="masterwiz/" element={<Home />} />
+   
         <Route exact path="/masterwiz/" element={<Home />} />
         <Route path="*" element={<Notfound/>}/> 
         <Route exact path="/masterwiz/about" element={<About />} />
+        <Route exact path="/about" element={<About />} />
         <Route exact path="/masterwiz/product" element={<Product />} />
         <Route exact path="/masterwiz/operation" element={<Operation />} />
         <Route exact path="/masterwiz/services/:id" element={<Services />} />
