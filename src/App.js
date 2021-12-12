@@ -17,6 +17,9 @@ function App()
     <div >
   <Menu/>
    <Routes>
+   <Route exact path="/" element={<Home />} />
+        <Route exact path="/masterwiz" element={<Home />} />
+        <Route exact path="masterwiz/" element={<Home />} />
         <Route exact path="/masterwiz/" element={<Home />} />
         <Route path="*" element={<Notfound/>}/> 
         <Route exact path="/masterwiz/about" element={<About />} />
